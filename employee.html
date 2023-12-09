@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+    <link rel="stylesheet" href="employee.css">
+    
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="AM Hotels Logo">
+        <h1>AM HOTELS AND RESTAURANTS</h1>
+    </header>
+    <section class="container">
+        <h2>EMPLOYEE DETAILS FORM</h2>
+        <p>
+
+        </p>
+<body>
+    <form id="employeeForm" onsubmit="validateForm(event)">
+      
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" required>
+
+        <label for="position">Position:</label>
+        <select id="position" required>
+            <option value="manager">Manager</option>
+            <option value="receptionist">Receptionist</option>
+            <option value="chef">Chef</option>
+            <option value="cleaning_staff">Cleaning Staff</option>
+            <option value="cleaning_staff">Bartendar</option>
+            <option value="cleaning_staff">Valet attendent</option>
+            <option value="cleaning_staff">Security</option>
+        </select>
+
+        <label for="contactInfo">Contact Information:</label>
+        <input type="text" id="contactInfo" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="employee_form.js"></script>
+</body>
+</html>
